@@ -4,7 +4,18 @@ def addTask():
     tasks.append(task)
     print(f"Task '{task}' added to the list")
 
+def deleteTask():
+    listTask()
+    try:
+        taskToDelete=int(input("Enter the number to delete"))
+        if taskToDelete<=0 and taskToDelete< len(tasks):
+            tasks.pop(taskToDelete)
+            print(f"Task {taskToDelete} has been deleted ")
+        else:
+            print(f"That {taskToDelete} is not available")
 
+    except:
+        print("Invalid input")
 
 
 
