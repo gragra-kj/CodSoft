@@ -28,7 +28,7 @@ if __name__=="_main_":
         else:
             print("Invalid choice")
 
-print("Goodbye wave")
+print("Goodbye 👋👋")
 
 
 
