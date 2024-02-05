@@ -1,4 +1,10 @@
-task=[]
+tasks=[]
+def addTask():
+    task=input("Enter a new task: ")
+    tasks.append(task)
+    print(f"Task '{task}' added to the list")
+
+
 
 
 
