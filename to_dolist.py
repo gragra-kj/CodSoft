@@ -3,7 +3,13 @@ def addTask():
     task=input("Enter a new task: ")
     tasks.append(task)
     print(f"Task '{task}' added to the list")
-
+def listTask():
+    if not tasks:
+        print("There are no tasks available")
+    else:
+        print("Tasks available: ")
+        for index, task in enumerate(tasks):
+            print(f"Tasks #{index}. {tasks}")
 def deleteTask():
     listTask()
     try:
