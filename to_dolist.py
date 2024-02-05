@@ -8,8 +8,8 @@ def listTask():
         print("There are no tasks available")
     else:
         print("Tasks available: ")
-        for index, task in enumerate(tasks):
-            print(f"Tasks #{index}. {tasks}")
+        for index, task in enumerate(tasks,start=1):
+            print(f"Tasks #{index}. {task}")
 def deleteTask():
     listTask()
     try:
@@ -25,7 +25,7 @@ def deleteTask():
 
 
 
-if __name__=="_main_":
+if __name__ == "__main__":
     print("Welcome to the to-do list app")
     #while loop for looping the app
     while True:
@@ -50,8 +50,6 @@ if __name__=="_main_":
             break
         else:
             print("Invalid choice")
-
-print("Goodbye 👋👋")
-
+    print("Goodbye 👋")
 
 
