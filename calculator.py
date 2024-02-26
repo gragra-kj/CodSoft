@@ -22,4 +22,30 @@ def calculator():
     print("2. Subtract")
     print("3. Multiply")
     print("4. Divide")
-    
+
+    choice=input("Enter choice (1/2/3/4): ")
+
+    if choice not in ['1','2','3','4']:
+        print("Invalid choice")
+        return
+
+    if choice =='1':
+        result=add(first_num,sec_num)
+        operation='+'
+
+    elif choice =='2':
+        result=subtract(first_num,sec_num)
+        operation='-'
+    elif choice =='3':
+        result=multiply(first_num,sec_num)
+        operation='*'
+    elif choice=='4':
+        result=divide(first_num,sec_num)
+        operation='/'
+
+    print(f"\nResult: {first_num} {operation} {sec_num} ={result}")
+
+if __name__=="__main__":
+    calculator()
+
+
